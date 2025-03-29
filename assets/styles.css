@@ -80,3 +80,28 @@ body{
     border: 3px solid red;
 }
 
+.depoimentos{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid orange;
+}
+
+.formulario{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid blue;
+}
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid green;
+}
+
+
