@@ -1,82 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+html {
+  font-size: 62.5%;  /* 1rem = 10px */
 }
 
-.hero{
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 3.6rem;
-    padding: 0 10rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.hero > .logo{
-    display: flex;
-    gap: 6px;
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 3.6rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.hero > .logo > p{
-    font-weight: 600;
-    color: #2d3748;
+header>.logo {
+  display: flex;
+  gap: 6px;
 }
 
-.hero > .logo > p > span{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #4CAF50;
-    transition: color 0.3s;
+header>.logo>p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d3748;
 }
 
-.logo .folha{
-    display: flex;
-    font-size: 1.5rem;
-    align-items: center;
-    color: #4CAF50;
+header>.logo>p>span {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #4CAF50;
+  transition: color 0.3s;
 }
 
-.hero > nav > ul{
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
+.logo .folha {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  color: #4CAF50;
 }
 
-.hero > nav > ul > li{
-    gap: 10rem;
+header>nav>ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
 }
 
-.hero > nav > ul > li > a{
-    text-decoration: none;
-    color: #2d3748;
-    transition: color 0.3s;
-    
+header>nav>ul>li {
+  gap: 10rem;
 }
 
-.hero > nav > ul > li > a:hover{
-    color: #4CAF50;
+header>nav>ul>li>a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #2d3748;
+  transition: color 0.3s;
+
+}
+
+header>nav>ul>li>a:hover {
+  color: #4CAF50;
 }
 
 
-.sobre{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid black;
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
 }
 
-.beneficios{
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid red;
+.beneficios {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid red;
 }
 
+h2 {
+  font-size: 3.2rem;
+}
