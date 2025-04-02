@@ -18,35 +18,34 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 10px 20px;
 }
 
-header .logo{
+header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1px;
-  
 }
 
-header .logo p{
-  margin-left: 0.25rem;    
-  color: #374151;         
-  font-weight: 600;       
+header .logo p {
+  margin-left: 0.25rem;
+  color: #374151;
+  font-weight: 600;
 }
 
-header .logo span{
+header .logo span {
   font-size: 1.5rem;
-  font-weight: 700; 
+  font-weight: 700;
   color: #4caf50;
 }
 
-header .logo .folha{
+header .logo .folha {
   color: #4caf50;
   font-size: 1.5rem;
-  font-weight: 900; 
-  margin-right: 0.5rem; 
+  font-weight: 900;
+  margin-right: 0.5rem;
 }
 
 header nav ul {
@@ -59,13 +58,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #374151;               /* text-gray-700 (cinza escuro) */
-  transition: color 0.2s ease;   /* transition (transição suave) */
+  color: #374151; /* text-gray-700 (cinza escuro) */
+  transition: color 0.2s ease; /* transition (transição suave) */
   text-decoration: none;
 }
 
 header nav ul li a:hover {
-  color: #4caf50;         
+  color: #4caf50;
 }
 
 .hero {
@@ -83,12 +82,10 @@ header nav ul li a:hover {
 }
 
 .hero .wrapper {
-  max-width: 650px;
-  width: 100%;
+  width: 54%;
   margin-left: 3rem;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 45px;
 }
 
 .hero h2 {
@@ -175,9 +172,9 @@ footer {
 }
 
 .sobre .about .joao p {
-  font-size: 1rem;    /* 18px - equivalent to text-lg */
-  margin-bottom: 1.5rem;   /* 24px - equivalent to mb-6 */
-  color: #4b5563;         /* equivalent to text-gray-600 */
+  font-size: 1rem; /* 18px - equivalent to text-lg */
+  margin-bottom: 1.5rem; /* 24px - equivalent to mb-6 */
+  color: #4b5563; /* equivalent to text-gray-600 */
 }
 
 .sobre .about .cards {
@@ -192,7 +189,7 @@ footer {
 }
 
 .sobre .about .cards .card {
-  display: flex;  
+  display: flex;
   align-items: center;
   background-color: #fff;
   border-radius: 12px;
@@ -201,7 +198,7 @@ footer {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
 }
 
-.sobre .about .cards .card p{
+.sobre .about .cards .card p {
   font-weight: 500;
   color: #1f2937;
 }
