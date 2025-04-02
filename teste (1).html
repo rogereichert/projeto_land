@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Coaching - Transforme sua Vida com Saúde e Equilíbrio</title>
+    <meta name="description" content="Coaching online para saúde e bem-estar. Aprenda hábitos alimentares saudáveis e rotinas de exercícios personalizadas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        primaryDark: '#3e8e41',
+                        lightGray: '#F5F5F5',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-poppins bg-white text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-primary text-2xl font-bold"><i class="fas fa-leaf mr-2"></i>FitLife</span>
+                <span class="ml-1 text-gray-700 font-semibold">Coaching</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-primary transition">Início</a>
+                <a href="#about" class="text-gray-700 hover:text-primary transition">Sobre</a>
+                <a href="#benefits" class="text-gray-700 hover:text-primary transition">Benefícios</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary transition">Depoimentos</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition">Contato</a>
+            </nav>
+            <a href="#contact" class="md:hidden text-primary">
+                <i class="fas fa-bars text-2xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg pt-32 pb-20 text-white min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center md:text-left animate-fade-in">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-slide-up">Transforme sua Vida com Saúde e Equilíbrio!</h1>
+                <p class="text-xl mb-8 animate-slide-up animation-delay-100">Descubra como pequenas mudanças podem gerar grandes resultados.</p>
+                <a href="#contact" class="bg-primary hover:bg-primaryDark text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block animate-slide-up animation-delay-200">
+                    Agende uma Sessão Grátis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-lightGray">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 animate-fade-in">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="João Almeida - FitLife Coach" 
+                             class="rounded-lg shadow-xl w-full max-w-md mx-auto floating">
+                        
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-fade-in animation-delay-200">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Sou João Almeida</h2>
+                    <p class="text-lg mb-6 text-gray-600">Especialista em saúde e bem-estar. Com mais de 5 anos de experiência, ajudo pessoas a conquistarem hábitos saudáveis e duradouros.</p>
+                    <p class="mb-6 text-gray-600">Minha abordagem combina nutrição inteligente, exercícios eficientes e mudança de mentalidade para criar transformações reais que duram para sempre.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-white p-3 rounded-lg shadow-sm">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-3">
+                                <i class="fas fa-utensils text-primary"></i>
+                            </div>
+                            <span class="font-medium">Nutrição</span>
+                        </div>
+                        <div class="flex items-center bg-white p-3 rounded-lg shadow-sm">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-3">
+                                <i class="fas fa-dumbbell text-primary"></i>
+                            </div>
+                            <span class="font-medium">Exercícios</span>
+                        </div>
+                        <div class="flex items-center bg-white p-3 rounded-lg shadow-sm">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-3">
+                                <i class="fas fa-brain text-primary"></i>
+                            </div>
+                            <span class="font-medium">Mentalidade</span>
+                        </div>
+                        <div class="flex items-center bg-primary text-white p-3 rounded-lg shadow-sm">
+                            <p class="font-bold mr-2">+5 anos</p>
+                            <p class="text-sm">de experiência</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Benefícios do Coaching</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Um programa personalizado para transformar sua saúde e qualidade de vida</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefit 1 -->
+                <div class="benefit-card bg-lightGray p-8 rounded-xl transition duration-300 animate-slide-up">
+                    <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-apple-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Alimentação saudável</h3>
+                    <p class="text-gray-600">Aprenda a se alimentar corretamente sem dietas restritivas. Planejamento nutricional personalizado para seu estilo de vida.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="benefit-card bg-lightGray p-8 rounded-xl transition duration-300 animate-slide-up animation-delay-100">
+                    <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-running text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Exercícios personalizados</h3>
+                    <p class="text-gray-600">Rotinas de exercícios adaptadas ao seu nível e objetivos, maximizando resultados com o mínimo de tempo necessário.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card bg-lightGray p-8 rounded-xl transition duration-300 animate-slide-up animation-delay-200">
+                    <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Saúde integral</h3>
+                    <p class="text-gray-600">Melhore sua energia, sono e disposição. Um corpo saudável começa com hábitos consistentes e sustentáveis.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card bg-lightGray p-8 rounded-xl transition duration-300 animate-slide-up">
+                    <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-clock text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Acompanhamento contínuo</h3>
+                    <p class="text-gray-600">Suporte semanal para manter você motivado e no caminho certo, ajustando estratégias conforme sua evolução.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="benefit-card bg-lightGray p-8 rounded-xl transition duration-300 animate-slide-up animation-delay-100">
+                    <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-balance-scale text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Equilíbrio sustentável</h3>
+                    <p class="text-gray-600">Métodos comprovados para criar hábitos duradouros, sem extremismos ou soluções milagrosas.</p>
+                </div>
+                
+                <!-- Benefit 6 -->
+                <div class="benefit-card bg-lightGray p-8 rounded-xl transition duration-300 animate-slide-up animation-delay-200">
+                    <div class="bg-primary bg-opacity-10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Resultados mensuráveis</h3>
+                    <p class="text-gray-600">Acompanhamento de métricas e ajustes constantes para garantir que você está progredindo em direção aos seus objetivos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O que dizem nossos clientes</h2>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">Histórias reais de transformação e resultados</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm animate-slide-up">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente 1" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Carolina</h4>
+                            <p class="text-sm opacity-80">Emagrecimento</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Perdi 12kg em 4 meses com o método do João. Aprendi a me alimentar melhor sem passar fome e hoje tenho muito mais energia!"</p>
+                    <div class="mt-4 text-yellow-300">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm animate-slide-up animation-delay-100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 2" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Ricardo Mendes</h4>
+                            <p class="text-sm opacity-80">Ganho de massa</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Depois de anos tentando ganhar massa sem sucesso, em 6 meses com o coaching do João consegui resultados que nunca imaginei possíveis."</p>
+                    <div class="mt-4 text-yellow-300">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm animate-slip animation-delay-200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente 3" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Patrícia Oliveira</h4>
+                            <p class="text-sm opacity-80">Qualidade de vida</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Aos 50 anos, me sinto melhor do que aos 30! O acompanhamento do João mudou minha relação com a comida e me ensinou a me exercitar corretamente."</p>
+                    <div class="mt-4 text-yellow-300">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-primaryDark text-white">
+        <div class="container mx-auto px-6 text-center animate-fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Pronto para transformar sua vida?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agende sua sessão gratuita e dê o primeiro passo em direção a uma vida mais saudável e equilibrada.</p>
+            <a href="#contact" class="bg-white text-primary font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 inline-block hover:bg-gray-100">
+                Quero minha Sessão Grátis!
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-lightGray">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden animate-fade-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary text-white p-10 flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-6">Vamos conversar?</h2>
+                        <p class="mb-6">Preencha o formulário ao lado para agendar sua sessão gratuita de 30 minutos.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope mr-3"></i>
+                                <span>contato@fitlifecoach.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-whatsapp mr-3"></i>
+                                <span>(11) 98765-4321</span>
+                            </div>
+                        </div>
+                        <div class="mt-8 flex space-x-4">
+                            <a href="#" class="hover:opacity-80 transition"><i class="fab fa-instagram text-2xl"></i></a>
+                            <a href="#" class="hover:opacity-80 transition"><i class="fab fa-facebook text-2xl"></i></a>
+                            <a href="#" class="hover:opacity-80 transition"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-10">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Agende sua sessão gratuita</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Seu nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Digite seu nome">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Seu e-mail</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Digite seu e-mail">
+                            </div>
+                            <div>
+                                <label for="goal" class="block text-gray-700 mb-2">Seu objetivo principal</label>
+                                <select id="goal" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Selecione...</option>
+                                    <option value="weight-loss">Emagrecer</option>
+                                    <option value="gain-mass">Ganhar massa muscular</option>
+                                    <option value="more-energy">Melhorar energia e disposição</option>
+                                    <option value="quality-life">Melhorar qualidade de vida</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-primaryDark text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                Quero minha Sessão Grátis!
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <span class="text-primary text-2xl font-bold"><i class="fas fa-leaf mr-2"></i>FitLife</span>
+                        <span class="ml-1 text-white font-semibold">Coaching</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Transformando vidas através de hábitos saudáveis</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
+                    <div>
+                        <h4 class="font-bold mb-3">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Início</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">Sobre</a></li>
+                            <li><a href="#benefits" class="text-gray-400 hover:text-white transition">Benefícios</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-3">Contato</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                                <span>contato@fitlifecoach.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-whatsapp mr-2 text-gray-400"></i>
+                                <span>(11) 98765-4321</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-3">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 FitLife Coaching. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-primaryDark transition transform hover:scale-110">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Simple animation trigger on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-fade-in, .animate-slide-up');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            animateElements.forEach(element => {
+                element.classList.add('opacity-0');
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

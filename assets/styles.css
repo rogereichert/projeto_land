@@ -8,59 +8,64 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
+.header {
+  display: block; /* Mudei para block pois não precisa mais de flex aqui */
   width: 100%;
+}
+
+header {
+  width: 89%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  height: 3.6rem;
-  padding: 0 3rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+  padding: 10px 20px;
 }
 
-header > .logo {
+header .logo{
   display: flex;
-  gap: 6px;
-}
-
-header > .logo > p {
-  font-weight: 600;
-  color: #2d3748;
-}
-
-header > .logo > p > span {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #4caf50;
-  transition: color 0.3s;
-}
-
-.logo .folha {
-  display: flex;
-  font-size: 1.5rem;
   align-items: center;
+  justify-content: center;
+  gap: 1px;
+  
+}
+
+header .logo p{
+  margin-left: 0.25rem;    
+  color: #374151;         
+  font-weight: 600;       
+}
+
+header .logo span{
+  font-size: 1.5rem;
+  font-weight: 700; 
   color: #4caf50;
 }
 
-header > nav > ul {
+header .logo .folha{
+  color: #4caf50;
+  font-size: 1.5rem;
+  font-weight: 900; 
+  margin-right: 0.5rem; 
+}
+
+header nav ul {
   display: flex;
   gap: 2.5rem;
+}
+
+header nav ul li {
   list-style: none;
 }
 
-header > nav > ul > li {
-  gap: 10rem;
-}
-
-header > nav > ul > li > a {
+header nav ul li a {
+  color: #374151;               /* text-gray-700 (cinza escuro) */
+  transition: color 0.2s ease;   /* transition (transição suave) */
   text-decoration: none;
-  color: #2d3748;
-  transition: color 0.3s;
 }
 
-header > nav > ul > li > a:hover {
-  color: #4caf50;
+header nav ul li a:hover {
+  color: #4caf50;         
 }
 
 .hero {
